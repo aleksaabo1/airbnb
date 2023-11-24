@@ -1,0 +1,24 @@
+.calenderDisplay{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.calenderDisplayMobile{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    align-items: start;
+}
+
+.calenderPicker{
+    display: flex;
+    gap: 5%;
+}
+.calenderPickerMobile{
+    align-self: center;
+}

@@ -1,0 +1,97 @@
+.topbar {
+    width: 100%;
+    height: 60px;
+    background-color: var(--background-color-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    max-height: 40px;
+}
+
+.searchUser{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 0 5%;
+}
+.drop{
+    position: absolute; /* Change to absolute */
+    display: inline-block;
+    top: 100%; /* Position it below the button */
+    border: 1px solid var(--text-color);
+    background-color: var(--background-color-secondary);
+    right: 100px; /* Align it to the right of the parent container */
+
+}
+
+.listElements{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    list-style-type: none;
+}
+
+.listElement{
+    text-decoration: none;
+}
+
+.listElement a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.listElement a:hover{
+    color: #ea8282;
+}
+
+.dropdownMenu {
+    position: absolute;
+    background-color: var(--background-color-secondary);
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 10rem;
+    z-index: 100;
+    margin-top: 100px;
+}
+
+.userButton{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: snow;
+    box-shadow: none;
+    border: 2px solid #ccc;
+
+}
+
+.userButton:hover{
+    cursor: pointer;
+    background: #cccccc;
+}
+
+
+
+.hamburgerBox{
+    width: 50px;
+}
+
+.hamburgerInner{
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+}
+
+.mobile{
+  height: 400px;
+    background-color: #4CAF50;
+
+}

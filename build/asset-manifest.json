@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1ab5e711.css",
+    "main.js": "/static/js/main.cada3694.js",
+    "static/js/306.221f0d23.chunk.js": "/static/js/306.221f0d23.chunk.js",
+    "static/js/787.32bf64e7.chunk.js": "/static/js/787.32bf64e7.chunk.js",
+    "static/media/houseDummy.webp": "/static/media/houseDummy.bbcb93b5ba50e6377abc.webp",
+    "static/media/bed.svg": "/static/media/bed.7329d85de616ec61f5d7f87d3caba023.svg",
+    "static/media/airbnb.svg": "/static/media/airbnb.96e62745de61aae4432961de96cd3905.svg",
+    "static/media/bag-of-money.svg": "/static/media/bag-of-money.50cc03e4caac91f197f5efec47a247b5.svg",
+    "static/media/location.svg": "/static/media/location.19abaa37e476a1d4fa3fb11b30e8da89.svg",
+    "static/media/bathroom.svg": "/static/media/bathroom.c303565dd5a782cd34688066707d1aa5.svg",
+    "index.html": "/index.html",
+    "main.1ab5e711.css.map": "/static/css/main.1ab5e711.css.map",
+    "main.cada3694.js.map": "/static/js/main.cada3694.js.map",
+    "306.221f0d23.chunk.js.map": "/static/js/306.221f0d23.chunk.js.map",
+    "787.32bf64e7.chunk.js.map": "/static/js/787.32bf64e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ab5e711.css",
+    "static/js/main.cada3694.js"
+  ]
+}

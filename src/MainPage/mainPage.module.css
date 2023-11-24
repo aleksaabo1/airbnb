@@ -1,0 +1,28 @@
+
+.mainPage{
+    padding: 120px 30px;
+    max-width: 1400px;
+    display: flex;
+    margin: auto;
+}
+
+.mainPageMobile{
+    padding: 2% 0;
+}
+
+.mainPageMobileText{
+    padding: 0 0;
+}
+
+
+.linebreak{
+    width: 100%;
+    border-bottom: 1px solid var(--text-color);
+    margin: 20px 0;
+}
+
+.ref{
+    padding-top: 20px;
+    width: 100%;
+    height: 2px;
+}

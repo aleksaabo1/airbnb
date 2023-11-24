@@ -1,0 +1,104 @@
+.topbar {
+    width: 100%;
+    height: 60px;
+    background-color: var(--background-color-secondary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    max-height: 40px;
+    padding: 10px;
+}
+
+.searchUser{
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    justify-content: center;
+}
+
+.listElements{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding:0;
+    margin: 0;
+}
+
+.listElement{
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: black 1px solid;
+    padding:0;
+
+}
+
+.listElement a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.listElement a:hover {
+    color: #ea8282;
+}
+
+
+.userButton{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background: snow;
+    box-shadow: none;
+    border: 2px solid #ccc;
+}
+
+.hamburger{
+    background-color: var(--background-color-secondary);
+    border: none;
+    margin-top: 5px;
+    height: 50px;
+}
+
+.userButton:hover{
+    cursor: pointer;
+    background: #cccccc;
+}
+
+.topbarContent{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hamburgerBox{
+    width: 30px;
+}
+
+.hamburgerInner{
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+    margin: 5px 0;
+}
+
+.mobile{
+    height: 600px;
+    background-color: var(--background-color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

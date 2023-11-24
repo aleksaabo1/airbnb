@@ -1,0 +1,58 @@
+.calendar {
+    width: 300px;
+    height: fit-content;
+    border: 1px solid #ccc;
+}
+
+.calendarHeader {
+    text-align: center;
+    padding: 5px;
+    background-color: var(--background-color-secondary);
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.dayNames {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    padding: 10px;
+}
+
+.calendarGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 10px;
+}
+
+.day {
+    padding: 5px;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.today{
+    background-color: #d72525;
+}
+
+.passed{
+    background-color: #9b9b9b;
+    cursor: not-allowed;
+
+}
+
+.button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #4CAF50; /* Example: green background for the selected date */
+}
+
+.range{
+    background-color: #4477d5; /* Example: green background for the selected date */
+}

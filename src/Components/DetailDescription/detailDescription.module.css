@@ -1,0 +1,31 @@
+.information{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.informationMobile{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-content: flex-start;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+
+.listInformation{
+    display: flex;
+    padding: 0;
+
+}
+
+.listInformation li{
+    list-style: none;
+    margin-right: 20px;
+}
+

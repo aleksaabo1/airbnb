@@ -1,0 +1,44 @@
+.mainComponent{
+    width: 300px;
+    height: 400px;
+
+    background-color: var(--background-color-secondary);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.image{
+    height: fit-content;
+    width: fit-content;
+    max-width: 100%;
+    max-height: 50%;
+}
+
+.informationListing{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 10px;
+    gap: 10px;
+}
+
+.description{
+    display: flex;
+}
+
+.previewText{
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: normal;
+    color: var(--text-color);
+    text-decoration-line: none;
+
+}
+
+.previewIcon{
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    filter: invert(var(--image-color-invert));
+}
+
