@@ -38,7 +38,7 @@ const ImageCarousell: React.FC<Props> = ({id, isMobile}) => {
 
 
     return (
-        <div style={!isMobile ? { width: "80%" } : {}}>
+        <div style={!isMobile ? { width: "80%" } : {width: "100%"}}>
             <div className={`${!isMobile ? styles.carouselContainer : styles.carouselContainerMobile}`} ref={carouselRef}>
                 {images.map((image, index) => (
                     <img
