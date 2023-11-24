@@ -41,7 +41,7 @@ const CabinReviews: React.FC<Props> = ({id, isMobile}) => {
             <div className={main.linebreak}/>
             <h1>Reviews</h1>
             <h2>Average rating {reviews ? (reviews.reduce((acc, review) => acc + review.rating, 0) / reviews.length).toFixed(1) : 0}</h2>
-            <div className={styles.reviewGrid}>
+                <div className={styles.reviewGrid}>
                 {reviews && reviews.slice(0, visibleReviewsCount).map((review, index) => (
                     <CabinReviewComponent key={index} rating={review.rating} text={review.text} username={review.username} isMobile={isMobile}/>
                 ))}
