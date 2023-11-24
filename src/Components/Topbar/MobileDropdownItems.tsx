@@ -30,9 +30,8 @@ const MobileDropdownItems = () => {
     return (
         <div className={styles.mobile}>
             <Suspense fallback={<div>Loading...</div>}>
-                <Dropdown dropdownData={dropdownData} />
+                <Dropdown dropdownData={dropdownDataLinks} />
             </Suspense>
-            <Dropdown dropdownData={dropdownDataLinks} />
             <Suspense fallback={<div>Loading...</div>}>
                 <Dropdown dropdownData={dropdownData} />
             </Suspense>
