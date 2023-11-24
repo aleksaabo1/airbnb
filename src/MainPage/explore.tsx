@@ -3,6 +3,7 @@ import styles from "./mainPage.module.css";
 import styleExplore from "./explore.module.css";
 import Preview from "../Components/RentalPreview/Preview";
 import {Link} from "react-router-dom";
+import {BASE_URL} from "../constants";
 
 
 interface Information {
@@ -23,7 +24,7 @@ export default function Explore() {
     // Function to fetch items from the API
     const fetchItems = async () => {
         setLoading(true);
-        const response = await fetch(`http://localhost:3001/items?page=${pageNumber}`);
+        const response = await fetch(BASE_URL + `/items?page=${pageNumber}`);
         const newItems = await response.json();
 
         // Preload images

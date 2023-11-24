@@ -1,6 +1,7 @@
 // SubscribeButton.tsx
 import React, {useEffect, useState} from 'react';
 import Toggle from '../Toggle/Toggle';
+import {BASE_URL} from "../../constants";
 
 interface Props {
     publicKey: string;
@@ -45,7 +46,7 @@ const SubscribeButton: React.FC<Props> = ({ publicKey }) => {
                 userVisibleOnly: true,
                 applicationServerKey: convertedVapidKey
             }).then(subscription => {
-                fetch('http://localhost:3001/api/subscribe', {
+                fetch(BASE_URL + '/api/subscribe', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

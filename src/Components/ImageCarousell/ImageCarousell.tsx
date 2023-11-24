@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 import styles from "./ImageCarousell.module.css";
+import {BASE_URL} from "../../constants";
 interface Props {
     id: number;
     isMobile: boolean
@@ -16,7 +17,7 @@ const ImageCarousell: React.FC<Props> = ({id, isMobile}) => {
     useEffect(() => {
         const fetchItems = async () => {
             const id_mod =  id % 10
-            const response = await fetch(`http://localhost:3001/images/${id_mod}`);
+            const response = await fetch(BASE_URL + `/images/${id_mod}`);
             const resp = await response.json();
             console.log(resp)
             setImages(resp)

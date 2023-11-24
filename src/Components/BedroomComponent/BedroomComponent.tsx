@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import styles from "./bedroomComponent.module.css";
 import BedroomDisplay from "./BedroomDisplay";
+import {BASE_URL} from "../../constants";
 
 
 interface BedroomsPops {
@@ -23,7 +24,7 @@ const BedroomComponent: React.FC<Props> = ({id, isMobile}) => {
     useEffect(() => {
         const fetchItems = async () => {
             const id_mod = id % 12
-            const response = await fetch(`http://localhost:3001/rentals/bedrooms/${id_mod}`);
+            const response = await fetch(BASE_URL + `/rentals/bedrooms/${id_mod}`);
             const resp = await response.json();
             console.log(bedrooms)
             setBedrooms(resp)

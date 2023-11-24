@@ -5,6 +5,7 @@ import details from "./detailRental.module.css";
 import {useParams} from "react-router-dom";
 import DetailDescription from "../Components/DetailDescription/DetailDescription";
 import ImageCarousell from "../Components/ImageCarousell/ImageCarousell";
+import {BASE_URL} from "../constants";
 
 const BedroomComponent = React.lazy(() => import('../Components/BedroomComponent/BedroomComponent'));
 const CalenderBooking = React.lazy(() => import('../Components/Calender/CalenderBooking'));
@@ -86,7 +87,7 @@ const DetailRental = () => {
     useEffect(() => {
         const fetchItems = async () => {
             const id_mod = id % 12
-            const response = await fetch(`http://localhost:3001/rentals/description/${id_mod}`);
+            const response = await fetch(BASE_URL + `/rentals/description/${id_mod}`);
             const resp = await response.json();
             console.log(description)
             setDescription(resp)

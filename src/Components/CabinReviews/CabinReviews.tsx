@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import CabinReviewComponent from "./CabinReviewComponent";
 import main from "../../MainPage/mainPage.module.css";
 import styles from "./cabinreview.module.css"
+import {BASE_URL} from "../../constants";
 
 
 interface Props {
@@ -26,7 +27,7 @@ const CabinReviews: React.FC<Props> = ({id, isMobile}) => {
 
     useEffect(() => {
         const fetchItems = async () => {
-            const response = await fetch(`http://localhost:3001/rentals/reviews/${id}`);
+            const response = await fetch(BASE_URL + `/rentals/reviews/${id}`);
             const resp = await response.json();
             console.log(reviews)
             setReviews(resp)
