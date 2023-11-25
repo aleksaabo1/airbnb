@@ -15,6 +15,9 @@ interface Details {
 
 const DetailDescription: React.FC<Details> = ({id, title, guests, bedrooms, beds, baths, description, isMobile}) => {
 
+
+
+
     return (
         <div className={`${!isMobile ? styles.information : styles.informationMobile}`}>
             <h1>{title}</h1>

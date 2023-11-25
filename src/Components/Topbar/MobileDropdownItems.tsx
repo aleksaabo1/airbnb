@@ -14,7 +14,7 @@ const MobileDropdownItems = () => {
     const [dropdownDataLinks, setDropdownDataLinks] = useState<React.ReactNode[]>([
         <Link to={"/"}>Home</Link>,
         <Link to="/">Explore</Link>,
-        <Link to="#contact">Contact</Link>,
+        <Link to="/bookings">Bookings</Link>,
         <Toggle Text={"Dark Mode"} id_name={"Dark"} />,
         <SubscribeButton publicKey="BFy7ElYdavR1v6_bDhsuanTW6RB7uapIXdrNBWCQXPbGLFgDeV59kOr8FEZR_p378h-KgpDU1GmQMRn94wPn9ZI" />,
     ]);

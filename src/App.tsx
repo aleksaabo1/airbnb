@@ -6,6 +6,7 @@ import MobileTopbar from "./Components/Topbar/MobileTopbar";
 import Explore from "./MainPage/explore";
 import {Routes, Route, BrowserRouter} from "react-router-dom";
 import DetailRental from "./MainPage/DetailRental";
+import Reservations from "./MainPage/Reservations";
 
 function App() {
     const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
@@ -37,6 +38,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Explore />} />
                 <Route path="/item/:id" element={<DetailRental />} />
+                <Route path="/bookings" element={<Reservations />} />
             </Routes>
 
         </div>

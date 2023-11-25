@@ -22,3 +22,21 @@
 .calenderPickerMobile{
     align-self: center;
 }
+
+.bookingBtn{
+    align-self: center;
+    width: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--background-color-secondary);
+    color: var(--text-color);
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.bookingBtn:hover{
+    background-color: var(--button-hover);
+    color: var(--text-color-secondary);
+    cursor: pointer;
+}

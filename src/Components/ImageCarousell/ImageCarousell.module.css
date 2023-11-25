@@ -23,6 +23,12 @@
 
 }
 
-.loadingImage {
+.loadingCarousel {
+    height: 650px;
     background: #ccc;
+}
+
+.loadingImage{
+    background: #b2b2b2;
+
 }

@@ -1,0 +1,13 @@
+.bookings{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.bookingsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 25px;
+    justify-items: center;
+}

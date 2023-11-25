@@ -24,7 +24,7 @@ export default function Topbar() {
                         <a href="/">Explore</a>
                     </li>
                     <li className={styles.listElement}>
-                        <a href="#contact">Contact</a>
+                        <a href="/bookings">Bookings</a>
                     </li>
                     </ul>
                 </div>
