@@ -70,7 +70,7 @@ const CalenderBooking: React.FC<Props> = ({isMobile}) => {
             };
 
             try {
-                const response = await fetch('http://localhost:3001/booking', {
+                const response = await fetch(BASE_URL + '/booking', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
