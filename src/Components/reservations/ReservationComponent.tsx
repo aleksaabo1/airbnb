@@ -17,7 +17,7 @@ const ReservationComponent: React.FC<ReservationProps> = ({ id, name, startDate,
             <p><strong>Name:</strong> {name}</p>
             <p><strong>Start Date:</strong> {startDate}</p>
             <p><strong>End Date:</strong> {endDate}</p>
-            <p><strong>URL:</strong> <Link to={url} target="_blank" rel="noopener noreferrer">{url}</Link></p>
+            <p> <Link to={url} target="_blank" rel="noopener noreferrer">Reservation</Link></p>
         </div>
     );
 }

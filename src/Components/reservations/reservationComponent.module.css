@@ -4,5 +4,7 @@
     padding: 10px;
     border-radius: 8px;
     width: 300px;
+    background-color: var(--background-color-secondary);
+    color: var(--text-color);
 }
 
