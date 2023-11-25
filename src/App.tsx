@@ -22,6 +22,15 @@ function App() {
 
     const mobileBreakpoint = 700;
     const isMobile = windowWidth > mobileBreakpoint;
+
+
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        // Retrieve the initial value from localStorage, or default to false
+        return JSON.parse(localStorage.getItem('isDarkMode') || 'false');
+    });
+
+
+
     return (
         <div className="App">
             {isMobile ? <Topbar/> : <MobileTopbar/>}

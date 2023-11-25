@@ -94,7 +94,7 @@
 }
 
 .mobile{
-    height: 600px;
+    height: 590px;
     background-color: var(--background-color-secondary);
     display: flex;
     flex-direction: column;
