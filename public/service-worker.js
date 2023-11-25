@@ -33,7 +33,7 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
     // Define URL patterns that need special handling
-    const patterns = ['/items', '/images', '/rentals/description', '/rentals/bedrooms', '/rentals/reviews', '/rentals/hosts'];
+    const patterns = ['/items', '/images', '/rentals/description', '/rentals/bedrooms', '/rentals/reviews', '/rentals/hosts', '/bookings'];
 
     // Check if the request URL matches any of the patterns
     const shouldHandleRequest = patterns.some(pattern => event.request.url.includes(pattern));
@@ -56,6 +56,8 @@ function CacheFist(request) {
         .catch(() => {
             console.log("Network request failed");
             // Optionally, return a fallback response here
+            return caches.match(request); // Return cached response if network fails
+
         });
 }
 
